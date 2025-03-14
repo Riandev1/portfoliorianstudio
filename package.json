@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "deploy": "npm run build && gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
@@ -28,6 +28,7 @@
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "15.1.1",
+    "gh-pages": "^5.0.0",
     "netlify-cli": "^19.0.2",
     "postcss": "latest",
     "sass": "^1.69.5",

@@ -1,5 +1,5 @@
-const path = require('path')
- 
+const path = require('path');
+
 module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
@@ -22,5 +22,9 @@ module.exports = {
         pathname: '**',
       },
     ],
+    unoptimized: true, // Adicionado para compatibilidade com exportação estática
   },
-}
+  output: 'export', // Configurado para exportação estática
+  basePath: '/portfoliorianstudio', // Substitua pelo nome do repositório
+  assetPrefix: '/portfoliorianstudio', // Substitua pelo nome do repositório
+};
